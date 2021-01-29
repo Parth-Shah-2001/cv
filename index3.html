@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style media="screen">
+  body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  <!-- to make sure the entire element is always covered,set the background-attachment property to fixed-->
+  background-size: cover;  <!-- 100% 100% -->
+}
+</style>
+  </head>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+-->
+
+
+</body>
+</html>
